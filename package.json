@@ -6,7 +6,15 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "start:center-main": "ng serve --configuration center-main",
+    "build:center-main": "ng build --configuration center-main",
+    "build:center-main:prod": "ng build --configuration center-main-prod",
+    "build:center-dll": "ng build --configuration center-dll",
+    "build:center-dll:prod": "ng build --configuration center-dll-prod",
+    "build:project1": "ng build project1",
+    "build:project1:prod": "ng build project1 --prod",
+    "start:project1": "ng serve project1"
   },
   "private": true,
   "dependencies": {
@@ -18,11 +26,13 @@
     "@angular/platform-browser": "~12.2.0",
     "@angular/platform-browser-dynamic": "~12.2.0",
     "@angular/router": "~12.2.0",
+    "ngx-center": "^0.2.4",
     "rxjs": "~6.6.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.11.4"
   },
   "devDependencies": {
+    "@angular-builders/custom-webpack": "^12.0.0",
     "@angular-devkit/build-angular": "~12.2.0",
     "@angular/cli": "~12.2.0",
     "@angular/compiler-cli": "~12.2.0",
@@ -34,6 +44,8 @@
     "karma-coverage": "~2.0.3",
     "karma-jasmine": "~4.0.0",
     "karma-jasmine-html-reporter": "~1.7.0",
-    "typescript": "~4.3.5"
+    "typescript": "~4.3.5",
+    "webpack-bootstrap-assets-plugin": "2.0.0",
+    "webpack-ng-dll-plugin": "2.2.2"
   }
 }
