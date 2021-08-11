@@ -25,13 +25,8 @@
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.app.json",
-            "assets": [
-              "src/favicon.ico",
-              "src/assets"
-            ],
-            "styles": [
-              "src/styles.css"
-            ],
+            "assets": ["src/favicon.ico", "src/assets"],
+            "styles": ["src/styles.css"],
             "scripts": []
           },
           "configurations": {
@@ -205,13 +200,8 @@
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.spec.json",
             "karmaConfig": "karma.conf.js",
-            "assets": [
-              "src/favicon.ico",
-              "src/assets"
-            ],
-            "styles": [
-              "src/styles.css"
-            ],
+            "assets": ["src/favicon.ico", "src/assets"],
+            "styles": ["src/styles.css"],
             "scripts": []
           }
         }
@@ -254,6 +244,7 @@
           },
           "configurations": {
             "production": {
+              "extractLicenses": false,
               "budgets": [
                 {
                   "type": "initial",
@@ -322,9 +313,7 @@
               "projects/project1/src/favicon.ico",
               "projects/project1/src/assets"
             ],
-            "styles": [
-              "projects/project1/src/styles.scss"
-            ],
+            "styles": ["projects/project1/src/styles.scss"],
             "scripts": []
           }
         }

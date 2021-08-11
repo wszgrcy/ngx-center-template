@@ -4,7 +4,8 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build",
+    "build": "yarn build:center-dll:prod && yarn build:center-main:prod && yarn build:project1:prod && npx cpx \"./dist/project1/**/*\" ./dist/ngx-center-template/project1",
+    "serve:build": "http-server ./dist/ngx-center-template",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "start:center-main": "ng serve --configuration center-main",
@@ -38,6 +39,8 @@
     "@angular/compiler-cli": "~12.2.0",
     "@types/jasmine": "~3.8.0",
     "@types/node": "^12.11.1",
+    "cpx": "^1.5.0",
+    "http-server": "^13.0.0",
     "jasmine-core": "~3.8.0",
     "karma": "~6.3.0",
     "karma-chrome-launcher": "~3.1.0",
