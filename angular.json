@@ -63,7 +63,7 @@
               "buildOptimizer": false,
               "optimization": false,
               "vendorChunk": false,
-              "extractLicenses": false,
+              "extractLicenses": true,
               "sourceMap": true,
               "namedChunks": true,
               "outputPath": "dist/center-dll",
@@ -158,7 +158,7 @@
                 }
               ],
               "outputHashing": "all",
-              "extractLicenses": false,
+              "extractLicenses": true,
               "outputPath": "dist/center-dll",
               "vendorChunk": false,
               "assets": [],
